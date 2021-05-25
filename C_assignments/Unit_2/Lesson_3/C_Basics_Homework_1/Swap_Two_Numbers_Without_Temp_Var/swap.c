@@ -4,26 +4,22 @@
  *  Created on: Nov 2, 2020
  *      Author: 20111
  */
-
-
+  
 #include <stdio.h>
 
-//C_Program_find_ascii_of_a_character:
-int main(void)
+int main()
 {
-	int a,b,z;
+    int num1=0, num2=0,temp=0;
+    printf("Enter value of a: ");
+    scanf("%d", &num1);
+    printf("Enter value of b: ");
+    scanf("%d", &num2);
+    temp = num1;
+    num1 = num2;
+    num2 = temp; 
+    printf("After swapping, value of a = %d\n", num1);
+    printf("After swapping, value of a = %d\n", num2);
 
-	printf("Enter value of a:\n"); /* prints Enter a value*/
-	fflush (stdout);
-	scanf (" %d",&a); // we have to leave space before scanf and not to leave space after it
-	printf("Enter value of b:\n");
-	fflush (stdout);
-	scanf (" %d",&b);
-
-	z=a;
-	a=b;
-	b=z;
-	printf("After swapping, value of a : %d\n",a);
-	printf("After swapping, value of b : %d\n",b);
-	return 0 ;
+    return 0;
 }
+
